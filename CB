@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> <title>Cindy's Birds</title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <div class="jumbotron text-center">
+
+  </div>
+</head>
+<body>
+   <div class="row">
+     <div class "col-sm-4"> </div>
+     <div class "col-sm-4">     <h1> Cindy's Birds</h1> </div>
+     <div class "col-sm-4"> </div>
+   </div>
+   <div class="row">
+     <div class="col-sm-2" style= "background-color:lavenderblush;">.Home </div>
+     <div class="col-sm-2" style= "background-color:lavender;">.About us</div>
+     <div class="col-sm-2" style= "background-color:green;">.inspo</div>
+     <div class="col-sm-2" style= "background-color:lavenderblush;">.something </div>
+     <div class="col-sm-2" style= "background-color:lavender;">.login</div>
+     <div class="col-sm-2" style= "background-color:green;">.search</div>
+   </div>
+   <div class="container">
+    <button type="button" class="btn btn-info btn-lg"> Create </button>
+  </div>
+  <div class "col-sm-4"> </div>
+  <div class "col-sm-4">     <h2> About us</h2> </div>
+  <div class "col-sm-4"> </div>
+  <div class "col-sm-4"> </div>
+  <div class "col-sm-4">     <h2> be inspired</h2> </div>
+  <div class "col-sm-4"> </div>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/Dokumente/ERASMUS/coding_course/mexpic.jpg">
+        <img src="/ERASMUS/coding_course/mexpic.jpg" alt="mex" style="width:100%">
+      </a>
+
+  <div class="col-md-4">
+
+  </div>
+  <div class="col-md-4">
+
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
