@@ -1,0 +1,12 @@
+#navigation_bar {
+  background-color: red;
+  margin-top: 0px;
+}
+.jumbotron{
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: inherit;
+  background-color: #ddd;
+}
