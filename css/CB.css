@@ -7,7 +7,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   color: inherit;
-  background-color: #FFE4C4;
+  background-color: #ffe6e6;
 }
 .jumbotron h1 {
   font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
@@ -16,6 +16,19 @@
 }
 .navbar {
   font-weight: bold;
+  margin-bottom: 0px;
+}
+.first-section {
+  background-color: #ffe6e6;
+  color:black;
+  font-family: fantasy;
+}
+.item img{
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer {
   font-size: 15px;
