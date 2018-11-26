@@ -7,7 +7,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   color: inherit;
-  background-color:  #ffb3b3;
+  background-color: #ffcccc;
 }
 .jumbotron h1{
   font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
@@ -89,7 +89,7 @@ h2{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #ff4d4d;
+  background-color: #ff9999;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -100,4 +100,41 @@ form{
 }
 .col-sm-offset-2 {
   padding: 0px;
+}
+.carousel-caption{
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  background-color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+.carousel-caption h2{
+  font-family: fantasy;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #ff9999;
+}
+#trends h1{
+  font-family: fantasy;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+#trends h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#trends button{
+  font-family: fantasy;
+  font-weight: lighter;
+  background-color: #ff9999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#about-us h1{
+  font-family: fantasy;
+  font-weight: lighter;
+  margin-top: 10px;
 }
