@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Cindy's Birdies</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/CB.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="js/bootstrap.min.js" rel="text/javascript">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!--Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  </script>
+  <script>
+    function signup()
+    {
+      document.getElementById("signup-form").innerHTML="Thank you for singing up!";
+    }
+  </script>
+
+<body>
+  <!--Up-button -->
+  <button onclick="topFunction()" type="button" id="myBtn"class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-circle-arrow-up"></span> Up
+        </button>
+
+  <!--Jumbotron -->
+  <div class="jumbotron" >
+    <div class="container">
+      <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8 text-center">
+        <h1>Cindy's Birds</h1>
+      </div>
+      <div class="col-sm-2">
+        <img src="Birds.png" class="img-responsive" alt="Photo of Birds" width="150" height="250">
+      </div>
+    </div>
+  </div>
+
+  <!--Navigation Bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">About us</a></li>
+        <li><a href="index.html">Trends</a></li>
+        <li><a href="#">Inspiration</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="singup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    <button class="btn btn-danger navbar-btn">Create</button>
+  </div>
+  </nav>
+
+  <br>
+
+  <!--Sign-up form -->
+  <form id="signup-form" class="form-horizontal">
+    <div class="container">
+    <!--Name -->
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Name:</label>
+        <div class="col-sm-6">
+          <input type="name" class="form-control" id="name" placeholder="Enter name">
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <!--Email -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!--Password -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+    <!--Checkbox -->
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <!--Submit button -->
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button onclick="signup()" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+    </div>
+  </form>
+
+  <!--Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <div class="col-xs-4">
+      </div>
+      <!--Facebook/Twitter links -->
+      <div class="col-xs-4">
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" alt="Facebook"></a>
+        <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"alt="twitter"></a>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
