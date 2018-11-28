@@ -1,40 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-  <title>Cindy's bird</title>
-<link href='css/bootstrap.css' rel='stylesheet'>
-<link href='css/style.css'rel='stylesheet'>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Cindy's Birdies</title>
+  <!--Title icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="dress.png" />
 
+  <!--Bootstrap CSS link-->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
 
+  <!--Personal CSS link -->
+  <link href="css/CB.css" rel="stylesheet">
+
+  <!--Bootstrap JS link -->
+  <link href="js/bootstrap.min.js" rel="text/javascript">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Bootstrap font link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 </head>
 
+<!--Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+      $(document).ready(function(){
+      $("a").on('click', function(event)
+      {
+        if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+         $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+      }
+      });
+      });
+  </script>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+  </script>
+
 <body>
-  <div class="container">
-    <div class='jumbotron'>
-       <div class="row">
-         <div class="col-sm-8">
-           </div>
-           <div class="col-sm-8 text-center">
-        <h1> The MaterialS at Your Disposal </h1>
-             <h3> (We are here to achieve your daydream.) </h3>
-             <h4>    You only need to draw it down. </h4>
-           </div>
-           <div class="col-sm-8">
-           </div>
+  <!--Up-button HTML -->
+  <button onclick="topFunction()" type="button" id="myBtn"class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-circle-arrow-up"></span> Up
+  </button>
 
-<div class="col=sm-4">
-    <img src='/Users/smileypansy/Downloads/BACKGROWN.JPG'width="280" height="180"
-    class="img-responsive">
+  <!--Jumbotron -->
+  <div class="jumbotron" >
+    <div class="container">
+      <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8 text-center" title="Cindy's Birds">
+        <h1>Cindy's Birds</h1>
+      </div>
+      <div class="col-sm-2">
+        <img src="Birds.png" class="img-responsive" alt="Photo of Birds" width="150" height="250">
+      </div>
+    </div>
   </div>
-</div>
 
-    <form role='form'>
-      <label for="dig"> Items </label>
-      <input type="nothing/everything" name="email" >
-      <button class="btn btn-success" type="submit">dig</button>
-    </form>
-  </div>
+  <!--Navigation bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!--Home button-->
+      <ul class="nav navbar-nav">
+        <li class="active" title="Home"><a href="index.html">Home</a></li>
+        <li><a href="#about-us" title="About us">About us</a></li>
+        <li><a href="#trends"title="Trends">Trends</a></li>
+        <li><a href="#"title="Inspiration">Inspiration</a></li>
+      </ul>
+      <!--Signup/login links -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      <!--Search bar-->
+      <form class="navbar-form navbar-right" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <!--CREATE button -->
+      <button class="btn btn-info navbar-btn" title="Create">Create</button>
+    </div>
+  </nav>
 
 <div class="row">
   <div class="col-xs-8">
@@ -49,17 +119,17 @@
     <h2><large>This is </large><br /> your wardrobe</h2>
 <div class="row">
   <div class="col-sm-4">
-      <img src='/Users/smileypansy/Downloads/shoeshat.JPG' width="350" height="250">
+      <img src='pics/shoeshat.JPG' width="350" height="250">
       <p> put your shoes on your head</p>
       <small> ...</small>
     </div>
       <div class="col-sm-4">
-      <img src='/Users/smileypansy/Downloads/chooseclothes.jpg' width="320" height="300">
+      <img src='pics/chooseclothes.jpg' width="320" height="300">
       <p> Make your own clothes with your attitude.</p>
       <small>your clothes is made of your favorite poems</small>
     </div>
     <div class="col-sm-4">
-      <img src='/Users/smileypansy/Downloads/edgyladys.PNG' width="240" height="320">
+      <img src='pics/edgyladys.PNG' width="240" height="320">
       <p> They 'sell' what you 'must' have, we offer you the opportunity to find out what you really need. </p>
     </div>
   </div>
